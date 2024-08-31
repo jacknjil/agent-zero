@@ -69,6 +69,10 @@ If you cannot provide all the necessary conditions or API keys, just change the 
 2. The communication between agent and terminal in docker container via SSH can sometimes break and stop producing outputs. Sometimes it is because the agent runs something like "server.serve_forever()" which causes the terminal to hang, sometimes a random error can occur. Restarting the agent and/or the docker container helps.
 3. The agent can break his operating system. Sometimes the agent can deactivate virtual environment, uninstall packages, change config etc. Again, removing the docker container and cleaning up the **work_dir/** is enough to fix that.
 
+## Additional Resources
+
+- [Aider Usage with Different LLMs](docs/aider_llm_usage.md)
+
 ## Ideal environment
 - **Docker container**: The perfect environment to run Agent Zero is the built-in docker container. The agent can download the image **frdel/agent-zero-exe** on its own and start the container, you only need to have docker running (like the Docker Desktop application).
 - **Python**: Python has to be installed on the system to run the framework.
